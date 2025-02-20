@@ -1,10 +1,10 @@
 import ClientLayout from "@/components/ClientLayout"; // Import the client layout
 import type { Metadata } from "next";
-import { Oswald as OswaldFont } from "next/font/google";
+import { Nunito } from "next/font/google";
 import React from "react";
 import "./globals.css";
 
-const oswald = OswaldFont({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio | Wongsaphat Puangsorn",
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={oswald.className}>
+      <body className={nunito.className}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

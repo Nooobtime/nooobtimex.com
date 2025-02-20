@@ -9,18 +9,13 @@ import {
 
 import {
   SiBootstrap,
-  SiCss3,
   SiDaisyui,
   SiFirebase,
-  SiGooglegemini,
-  SiHtml5,
   SiJavascript,
   SiNextdotjs,
   SiNuxtdotjs,
-  SiOpenai,
   SiReact,
   SiShadcnui,
-  SiSupabase,
   SiTailwindcss,
   SiTypescript,
   SiVercel,
@@ -28,8 +23,6 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  { name: "Html", Icon: SiHtml5 },
-  { name: "CSS", Icon: SiCss3 },
   { name: "Bootstrap", Icon: SiBootstrap },
   { name: "Tailwind CSS", Icon: SiTailwindcss },
   { name: "Daisy UI", Icon: SiDaisyui },
@@ -42,9 +35,6 @@ const skills = [
   { name: "Nuxt.js", Icon: SiNuxtdotjs },
   { name: "Vercel", Icon: SiVercel },
   { name: "Firebase", Icon: SiFirebase },
-  { name: "Supabase", Icon: SiSupabase },
-  { name: "ChatGpt ", Icon: SiOpenai },
-  { name: "Gemini", Icon: SiGooglegemini },
 ];
 
 export default function Skill() {

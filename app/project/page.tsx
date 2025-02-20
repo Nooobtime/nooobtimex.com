@@ -10,10 +10,13 @@ import {
   SiGoogleads,
   SiGoogleanalytics,
   SiGoogletagmanager,
+  SiJavascript,
   SiNextdotjs,
   SiNuxtdotjs,
+  SiShadcnui,
   SiSupabase,
   SiTailwindcss,
+  SiTypescript,
   SiVercel,
   SiWoocommerce,
   SiWordpress,
@@ -40,12 +43,15 @@ type Skill = {
 // Single array used for both filtering and mapping skills.
 const skillsArr: Skill[] = [
   { name: "NEXT JS", Icon: SiNextdotjs },
-  { name: "FIREBASE", Icon: SiFirebase },
+  { name: "NUXT JS", Icon: SiNuxtdotjs },
   { name: "TAILWIND CSS", Icon: SiTailwindcss },
   { name: "DAISY UI", Icon: SiDaisyui },
-  { name: "NUXT JS", Icon: SiNuxtdotjs },
+  { name: "Shad/cn UI", Icon: SiShadcnui },
+  { name: "TYPESCRIPT", Icon: SiTypescript },
+  { name: "JAVASCRIPT", Icon: SiJavascript },
   { name: "VERCEL", Icon: SiVercel },
   { name: "SUPABASE", Icon: SiSupabase },
+  { name: "FIREBASE", Icon: SiFirebase },
   { name: "WORDPRESS", Icon: SiWordpress },
   { name: "WOOCOMMERCE", Icon: SiWoocommerce },
   { name: "Google Ads", Icon: SiGoogleads },
@@ -69,7 +75,13 @@ export default function ProjectSection() {
       href: "https://nooobtimex.me/",
       imgSrc: "/project/Portfolio.png",
       name: "Portfolio",
-      skills: ["NEXT JS", "FIREBASE", "TAILWIND CSS", "DAISY UI"],
+      skills: [
+        "NEXT JS",
+        "TAILWIND CSS",
+        "Shad/cn UI",
+        "TYPESCRIPT",
+        "FIREBASE",
+      ],
     },
     {
       href: "https://github.com/NooobtimeX/QR-Food",
@@ -81,13 +93,25 @@ export default function ProjectSection() {
       href: "https://combomaker.net/",
       imgSrc: "/project/ComboMaker.png",
       name: "Combo Maker",
-      skills: ["NEXT JS", "FIREBASE", "TAILWIND CSS"],
+      skills: [
+        "NEXT JS",
+        "TAILWIND CSS",
+        "Shad/cn UI",
+        "TYPESCRIPT",
+        "FIREBASE",
+      ],
     },
     {
       href: "https://hoyosmash.com/",
       imgSrc: "/project/HoYoSmash.png",
       name: "HoyoSmash",
-      skills: ["NEXT JS", "FIREBASE", "TAILWIND CSS"],
+      skills: [
+        "NEXT JS",
+        "TAILWIND CSS",
+        "Shad/cn UI",
+        "TYPESCRIPT",
+        "FIREBASE",
+      ],
     },
     {
       href: "https://www.rs-trophy.com",
@@ -162,13 +186,13 @@ export default function ProjectSection() {
           <Head>
             <link rel="canonical" href="https://nooobtimex.me/projects" />
           </Head>
-          <div className="container mx-auto max-w-7xl">
+          <div>
             <h1 className="text-center text-4xl font-bold text-primary mb-8">
               PROJECT
             </h1>
 
             <TooltipProvider>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 items-center">
                 {filteredItems.map((item, idx) => (
                   <ProjectCard
                     key={idx}

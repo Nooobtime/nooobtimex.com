@@ -1,4 +1,3 @@
-import AboutMe from "@/components/section/AboutMe";
 import Contact from "@/components/section/Contact";
 import HeroSection from "@/components/section/HeroSection";
 import Projects from "@/components/section/Projects";
@@ -12,7 +11,6 @@ export default function Home() {
         <link rel="canonical" href="https://nooobtimex.me/" />
       </Head>
       <HeroSection />
-      <AboutMe />
       <Projects />
       <Skills />
       <Contact />
