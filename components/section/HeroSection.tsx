@@ -1,15 +1,16 @@
 "use client";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import CountUp from "react-countup";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Card } from "../ui/card";
 
 export default function HeroSection() {
   const stats = [
-    { value: 3, label: "Client" },
-    { value: 8, label: "Project" },
+    { value: 3, label: "CLIENT" },
+    { value: 8, label: "PROJECT" },
+    { value: 1, label: "YOE" },
   ];
 
   return (
@@ -45,7 +46,7 @@ export default function HeroSection() {
             <Button>VIEW PROJECT</Button>
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-3 gap-4 mt-8">
           {stats.map((stat, index) => (
             <Card key={index} className="text-center py-4">
               <CountUp start={0} end={stat.value} duration={5} />
