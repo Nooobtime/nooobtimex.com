@@ -10,7 +10,6 @@ import {
 import {
   SiBootstrap,
   SiDaisyui,
-  SiFirebase,
   SiJavascript,
   SiNextdotjs,
   SiNuxtdotjs,
@@ -23,18 +22,17 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  { name: "Bootstrap", Icon: SiBootstrap },
-  { name: "Tailwind CSS", Icon: SiTailwindcss },
-  { name: "Daisy UI", Icon: SiDaisyui },
-  { name: "Shad/cn UI", Icon: SiShadcnui },
-  { name: "JavaScript", Icon: SiJavascript },
-  { name: "TypeScript", Icon: SiTypescript },
-  { name: "React", Icon: SiReact },
-  { name: "Vue.js", Icon: SiVuedotjs },
   { name: "Next.js", Icon: SiNextdotjs },
   { name: "Nuxt.js", Icon: SiNuxtdotjs },
+  { name: "React", Icon: SiReact },
+  { name: "Vue.js", Icon: SiVuedotjs },
+  { name: "Tailwind CSS", Icon: SiTailwindcss },
+  { name: "Shad/cn UI", Icon: SiShadcnui },
+  { name: "Daisy UI", Icon: SiDaisyui },
+  { name: "Bootstrap", Icon: SiBootstrap },
+  { name: "JavaScript", Icon: SiJavascript },
+  { name: "TypeScript", Icon: SiTypescript },
   { name: "Vercel", Icon: SiVercel },
-  { name: "Firebase", Icon: SiFirebase },
 ];
 
 export default function Skill() {
