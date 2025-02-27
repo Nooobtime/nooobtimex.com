@@ -62,7 +62,7 @@ export default function Contact() {
           {contactDetails.map((detail, index) => {
             const Icon = detail.icon;
             return (
-              <Card key={index} className="shadow">
+              <Card key={index} className="shadow-sm">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <Icon className="text-xl" />

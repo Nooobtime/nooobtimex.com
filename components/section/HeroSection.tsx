@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Profile Avatar using shadcn/ui */}
       <Avatar className="w-40 h-40 mx-auto lg:hidden block mb-8">
         <AvatarImage
-          className="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+          className="rounded-full ring-3 ring-primary ring-offset-base-100 ring-offset-2"
           src="/profile/NooobtimeX.webp"
           alt="Avatar"
         />
@@ -50,7 +50,7 @@ export default function HeroSection() {
           {stats.map((stat, index) => (
             <Card key={index} className="text-center py-4">
               <CountUp start={0} end={stat.value} duration={5} />
-              <p>{stat.label}</p>
+              <p className="text-md">{stat.label}</p>
             </Card>
           ))}
         </div>
@@ -59,7 +59,7 @@ export default function HeroSection() {
       {/* Profile Avatar using shadcn/ui */}
       <Avatar className="w-40 h-40 mx-auto hidden lg:block  ">
         <AvatarImage
-          className="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+          className="rounded-full ring-3 ring-primary ring-offset-base-100 ring-offset-2"
           src="/profile/NooobtimeX.webp"
           alt="Avatar"
         />

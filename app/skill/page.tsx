@@ -1,5 +1,6 @@
 "use client";
 
+import { IconType } from "react-icons";
 import { CgMonday } from "react-icons/cg";
 import {
   SiBootstrap,
@@ -25,7 +26,7 @@ import {
 const SkillCard = ({
   skill,
 }: {
-  skill: { name: string; Icon: any; level: string };
+  skill: { name: string; Icon: IconType; level: string };
 }) => {
   const getLevelColor = (level: string) => {
     switch (level) {
@@ -57,7 +58,7 @@ const SkillGroup = ({
 }: {
   group: {
     groupName: string;
-    skills: Array<{ name: string; Icon: any; level: string }>;
+    skills: Array<{ name: string; Icon: IconType; level: string }>;
   };
 }) => {
   return (
