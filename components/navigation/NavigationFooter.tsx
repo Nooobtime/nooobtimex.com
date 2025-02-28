@@ -4,17 +4,13 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
 const contents = [
-  { name: "SKILL", url: "/skill" },
-  { name: "PROJECT", url: "/project" },
-  { name: "CONTACT", url: "/contact" },
-  { name: "POSTS", url: "/posts" },
+  { name: "SKILL", url: "/#skill" },
+  { name: "PROJECT", url: "/#project" },
+  { name: "CONTACT", url: "/#contact" },
 ];
 
 const clientprojects = [
   { name: "RS TROPHY", url: "https://www.rs-trophy.com/" },
-  { name: "RS MEDAL", url: "https://www.rs-medal.com/" },
-  { name: "RS AWARD", url: "https://www.rs-award.com/" },
-  { name: "RS RIBBON", url: "https://www.rs-ribbon.com/" },
 ];
 
 const personalprojects = [

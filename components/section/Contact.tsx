@@ -53,11 +53,11 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="flex items-center justify-center py-4">
-      <div className="container mx-auto px-4">
-        <h1 className="text-center text-4xl font-bold text-primary mb-8">
+    <section id="contact" className="flex items-center justify-center">
+      <div className="container mx-auto px-4 pt-32">
+        <h2 className="text-center text-4xl font-bold text-primary mb-8">
           Contact
-        </h1>
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {contactDetails.map((detail, index) => {
             const Icon = detail.icon;
@@ -66,7 +66,7 @@ export default function Contact() {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <Icon className="text-xl" />
-                    <span>{detail.title}</span>
+                    <h3>{detail.title}</h3>
                     {detail.recommend && (
                       <Badge variant="secondary">Recommended</Badge>
                     )}

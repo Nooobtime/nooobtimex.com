@@ -1,7 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IconType } from "react-icons";
@@ -9,6 +7,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { GiBrain } from "react-icons/gi";
 import { LuContact } from "react-icons/lu";
+import { SiGithub } from "react-icons/si";
 
 export interface MenuItem {
   title: string;
@@ -21,19 +20,18 @@ const Header = () => {
 
   // Desktop menu items
   const menuItemsDesktop: MenuItem[] = [
-    { title: "HOME", href: "/" },
-    { title: "SKILL", href: "/skill" },
-    { title: "PROJECT", href: "/project" },
+    { title: "SKILL", href: "/#skill" },
+    { title: "PROJECT", href: "/#project" },
   ];
 
   // Mobile menu items
   const menuItemsLeft: MenuItem[] = [
-    { title: "SKILL", href: "/skill", icon: GiBrain },
-    { title: "CONTACT", href: "/contact", icon: LuContact },
+    { title: "SKILL", href: "/#skill", icon: GiBrain },
+    { title: "CONTACT", href: "/#contact", icon: LuContact },
   ];
 
   const menuItemsRight: MenuItem[] = [
-    { title: "PROJECT", href: "/project", icon: FaLaptopCode },
+    { title: "PROJECT", href: "/#project", icon: FaLaptopCode },
     {
       title: "CV",
       href: "https://firebasestorage.googleapis.com/v0/b/portfolio-84dbc.firebasestorage.app/o/CV_Wongsaphat_Puangsorn.pdf?alt=media&token=bc279fdc-80e4-40b1-8969-b61d3397cde2",
@@ -49,7 +47,7 @@ const Header = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <Link href="/">
-              <Image
+              <img
                 src="/favicon.ico"
                 alt="Portfolio Logo"
                 className="rounded-full"
@@ -57,7 +55,7 @@ const Header = () => {
                 height={40}
               />
             </Link>
-            <span className="text-xl font-bold">NooobtimeX</span>
+            <Link href="/">NooobtimeX</Link>
           </div>
 
           {/* Navigation Links */}
@@ -66,26 +64,15 @@ const Header = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 text-gray-800 transition-colors duration-200 hover:text-black"
+                className="px-4 py-2 text-gray-800 transition-colors duration-200 hover:text-primary"
               >
                 {item.title}
               </Link>
             ))}
           </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-row gap-2">
-            <Link
-              href="https://firebasestorage.googleapis.com/v0/b/portfolio-84dbc.firebasestorage.app/o/CV_Wongsaphat_Puangsorn.pdf?alt=media&token=bc279fdc-80e4-40b1-8969-b61d3397cde2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline">Download CV</Button>
-            </Link>
-            <Link href="/contact">
-              <Button variant="default">CONTACT</Button>
-            </Link>
-          </div>
+          <Link href={"https://github.com/NooobtimeX"} target="_blank">
+            <SiGithub className="text-2xl text-gray-800 hover:cursor-pointer" />
+          </Link>
         </nav>
       </div>
 
@@ -95,7 +82,7 @@ const Header = () => {
           {/* Overlapping Logo */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[15%]">
             <Link href="/" className="flex flex-col items-center mb-12">
-              <Image
+              <img
                 src="/favicon.ico"
                 alt="Portfolio Logo"
                 className="rounded-full p-[2px] bg-gray-200"
